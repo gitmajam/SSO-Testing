@@ -1,0 +1,8 @@
+com/atc/seleniumframework/pages/LoginEmailPage.class
+com/atc/seleniumframework/pages/LoginSharpIdPage.class
+com/atc/seleniumframework/pages/SSOLandingPage.class
+com/atc/seleniumframework/pages/RegisterPage.class
+com/atc/seleniumframework/pages/BasePageObject.class
+com/atc/seleniumframework/pages/PassRegisterPage.class
+com/atc/seleniumframework/utilities/GeneralUtils.class
+com/atc/seleniumframework/pages/SimplificaHomePage.class

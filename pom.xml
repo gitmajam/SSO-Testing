@@ -13,8 +13,7 @@
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>7.4.0</version>
-			
-			<!-- <scope>test</scope> -->
+			<scope>test</scope>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
@@ -60,6 +59,8 @@
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
+					<testSource>1.8</testSource>
+                    <testTarget>1.8</testTarget>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -75,6 +76,19 @@
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
+			<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.2.0</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>test-jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+			
 		</plugins>
 	</build>
 </project>
